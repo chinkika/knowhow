@@ -2,7 +2,7 @@
 
 ##### １．運用環境
 |項目|環境|
-|:-|:-|:-|
+|:-|:-|
 |PC|Mac mini（late2014)|
 |OS|10.13.3macOS High Sierra|
 |Xcode|9.4|
