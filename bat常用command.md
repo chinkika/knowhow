@@ -71,11 +71,11 @@ echo %JMETER_HOME%
   
 
 - コマンドの実行結果を引数として使用したい
-```
-for /F %%i in ('dir /b ^| findstr csv') do ( set TEST_CSV=%%i)
-```
   - カレントディレクトリにあるcsvファイル名を取得して引数TEST_CSVに格納
   - パイプを使用する時、`^`を付けなければいけない
+  ```
+  for /F %%i in ('dir /b ^| findstr csv') do ( set TEST_CSV=%%i)
+  ```
 
 
 - batファイル例
