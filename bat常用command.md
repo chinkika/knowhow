@@ -78,6 +78,14 @@ echo %JMETER_HOME%
   ```
 
 
+- ファイルへ保存とファイルから読み出す
+  - カレントディレクトリにあるcsvファイル名を取得して引数TEST_CSVに格納
+  ```
+  dir /b | findstr csv > tmp.txt
+  set /p TEST_CSV=<tmp.txt
+  del tmp.txt
+  ```
+
 - batファイル例
 
 ```
