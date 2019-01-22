@@ -3,11 +3,13 @@
 
 
 - 注釈は`::`を使用
+- 情報を出力は`echo`を使用
+
 
 - ディレクトリ移動する時、c/d/eドライブ考えず移動できる`/d`
 ```
 cd /d D:\jmeter\apache-jmeter-4.0\bin
-(現ディレクトリはC:\Users\lx17070098\Desktop\test)
+(現ディレクトリはC:\Users\chin\Desktop\test)
 ```
 - ディレクトリ移動時、ディレクトリが簡単に取得できる
   - 例D:\jijs\bin\Test.bat
@@ -66,18 +68,28 @@ echo %JMETER_HOME%
 - フォルダ削除と作成
   - rmdir フォルダ名
   - md フォルダ名
+  
+
+- コマンドの実行結果を引数として使用したい
+```
+for /F %%i in ('dir /b ^| findstr csv') do ( set TEST_CSV=%%i)
+```
+  - カレントディレクトリにあるcsvファイル名を取得して引数TEST_CSVに格納
+  - パイプを使用する時、`^`を付けなければいけない
 
 
 - batファイル例
 
 ```
 set TEST_PATH=%~dp0
-set TEST_CSV=log.csv
 set JMETER_PATH=%JMETER_HOME%\bin
 
 echo %TEST_PATH%
-echo %TEST_CSV%
 echo %JMETER_PATH%
+
+::CSVファイル名を取得してTEST_CSVに保存しておく
+for /F %%i in ('dir /b ^| findstr csv') do ( set TEST_CSV=%%i)
+echo %TEST_CSV%
 
 ::テスト用フォルダに移動(パッチとCSVのあるフォルダ)
 ::既に生成されたoutputフォルダがあれば削除しておく
@@ -87,9 +99,9 @@ if exist output (rmdir /S /Q output)
 ::CSVファイルをjmeter作業フォルダにコピー
 ::こちらの例としては、環境変数JMETER_HOME=D:\jmeter\apache-jmeter-4.0
 copy /y %TEST_CSV%    %JMETER_PATH%
-cd   /d %JMETER_PATH%
 
 ::jmeterフォルダにoutputフォルダがあれば削除しておく
+cd /d %JMETER_PATH%
 if exist output (rmdir /S /Q output)
 
 ::テスト用フォルダにレポートを生成する(パッチとCSVのあるフォルダ)
