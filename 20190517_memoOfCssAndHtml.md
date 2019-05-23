@@ -167,3 +167,29 @@ img.clr{
   flex-direction: column;
 }
 ```
+
+##### 9.radio/checkboxテキストと一緒に
+```
+<label for="left" class="subSelectItem">
+  <input id="left" type="radio" name="order" value="1" checked>左
+  <img src="../images/l.png" alt="" class="img">
+</label>
+<label for="right" class="subSelectItem">
+  <input id="right" type="radio" name="order" value="2">右
+  <img src="../images/2.png" alt="" class="img">
+</label>
+
+var elements = document.getElementsByName("order");
+for (var i="", i=elements.length; i--; ){
+  if(elements[i].checked){
+    set = elements[i].value;
+  }
+}
+```
+- 選択項目と文字グループ選択(label使用)：http://www.1uphp.com/con1/form/label.html
+- http://www-creators.com/archives/2386
+- https://web-designer.cman.jp/html_ref/abc_list/input_radio/
+- radio値を取得：https://lab.syncer.jp/Web/JavaScript/Snippet/30/
+
+##### 10.クラス
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Classes
