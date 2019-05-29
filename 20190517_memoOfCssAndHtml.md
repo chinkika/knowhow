@@ -193,3 +193,32 @@ for (var i="", i=elements.length; i--; ){
 
 ##### 10.クラス
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Classes
+
+##### 11.文書が長い時、・・・で省略表示
+セル幅の最大幅を200pxと決めて、それ以上になる文字列は省略する場合
+```
+.title {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+```
+- https://qiita.com/tksnino/items/4cf63bd1fc86a69daba0
+
+##### 12.ファイル構成
+```
+<html>
+  <head>
+    <title>XXX画面</title>
+    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    </script>
+    <style type="text/css">
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
+```
