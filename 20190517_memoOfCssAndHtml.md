@@ -194,7 +194,7 @@ for (var i="", i=elements.length; i--; ){
 ##### 10.クラス
 - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Classes
 
-##### 11.文書が長い時、・・・で省略表示
+##### 11.文書が長い時、・・・で省略表示(20190529)
 セル幅の最大幅を200pxと決めて、それ以上になる文字列は省略する場合
 ```
 .title {
@@ -206,7 +206,7 @@ for (var i="", i=elements.length; i--; ){
 ```
 - https://qiita.com/tksnino/items/4cf63bd1fc86a69daba0
 
-##### 12.ファイル構成
+##### 12.ファイル構成(20190529)
 ```
 <html>
   <head>
@@ -227,3 +227,25 @@ for (var i="", i=elements.length; i--; ){
 - justify-content：space-aroundを使用
 - https://xn--web-oi9du9bc8tgu2a.com/css-basis-flex/
 - https://developer.mozilla.org/ja/docs/Web/CSS/justify-content
+
+
+##### 14.画面サイズ変わった時のcss設定(20190603)
+```
+@media screen and (max-width: 767px) {}
+@media screen and (max-width: 959px) {}
+```
+
+
+##### 15.html中にscriptを挟む時(20190603)
+- getFullYearすべてのブラウザーで対応
+```
+<div class="CopyRignt">(C) 
+  <span id="lblYear">
+    <script type="text/javascript" language="JavaScript"><!--
+    TYnow = new Date();
+    document.write( TYnow.getFullYear() );
+    --></script>
+  </span> XXX CORPORATION</div>
+</div>
+```
+- http://www.openreference.org/articles/view/191
