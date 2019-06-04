@@ -222,3 +222,8 @@ for (var i="", i=elements.length; i--; ){
   </body>
 </html>
 ```
+
+##### 13.アイコンや画像など均等に配置する時(20190603)
+- justify-content：space-aroundを使用
+- https://xn--web-oi9du9bc8tgu2a.com/css-basis-flex/
+- https://developer.mozilla.org/ja/docs/Web/CSS/justify-content
