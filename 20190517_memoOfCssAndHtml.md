@@ -13,6 +13,7 @@ flex: 1
 - 幅を伸ばす要素はflex: 1を指定(残りの幅を全部与える意味)
 - 上記二要素の親にはdisplay: flexを指定
 - https://qiita.com/hashrock/items/939684b9207dbab1d59e
+- https://liginc.co.jp/web/html-css/css/21024(justfy-content込)
 
 
 ##### 2.inline-block、いくつかのinput枠を揃える
