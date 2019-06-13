@@ -250,3 +250,12 @@ for (var i="", i=elements.length; i--; ){
 </div>
 ```
 - http://www.openreference.org/articles/view/191
+
+
+##### 16.input入力を数字限定、入力後キーボードを隠す(20190613)
+```
+<!-- 数字正規表現[\d] -->
+<input type="text" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" placeholder="数字のみ">
+```
+- https://blog.csdn.net/redwolfchao/article/details/84973177
+- https://mseeeen.msen.jp/javascript-blur-and-focus-with-buttons/
