@@ -265,4 +265,5 @@ for (var i="", i=elements.length; i--; ){
 .img{//画像のスタイルシートに下記を追加
 vertical-align: middle;
 }
+```
 - https://www.jianshu.com/p/398629d9f3d2
