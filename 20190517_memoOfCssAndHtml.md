@@ -259,3 +259,10 @@ for (var i="", i=elements.length; i--; ){
 ```
 - https://blog.csdn.net/redwolfchao/article/details/84973177
 - https://mseeeen.msen.jp/javascript-blur-and-focus-with-buttons/
+
+##### 17.文字と画像の中央配置(20190719)
+```
+.img{//画像のスタイルシートに下記を追加
+vertical-align: middle;
+}
+- https://www.jianshu.com/p/398629d9f3d2
