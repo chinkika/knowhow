@@ -72,6 +72,6 @@ heroku config:set SECRET_KEY="****" --app アプリケーション名　→Herok
     - npm install @line/bot-sdk --save　→ middlewareを使用
 
 参照先
-- https://qiita.com/TakuTaku04/items/cb71f10669a9e9cbf71b
+- LINE BOTをHeroku + Node.jsでやるまで：https://qiita.com/TakuTaku04/items/cb71f10669a9e9cbf71b
 - Heroku Dev Center：https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
 - Heroku:https://qiita.com/TakuTaku04/items/6ecc533385559f4660bd
