@@ -267,3 +267,14 @@ vertical-align: middle;
 }
 ```
 - https://www.jianshu.com/p/398629d9f3d2
+
+
+##### 18.タグa　リンクと画像の間改行したら画像の右下に線が出る(20190822)
+```
+<a href="#">
+    <img src="sample.jpg">
+</a>
+解決方法：改行をなくす
+<a href="#"><img src="sample.jpg"></a>
+```
+- https://giniland.com/html画像の右下に下線を消す方法/
