@@ -40,6 +40,18 @@ $(window).on('load', function() {
 
 - https://entrys.jp/html5/column/2289/
 
-##### 3.他参考リンク
+##### 3.疑似要素を使う
+```
+#ターゲット要素::before {
+    content: "";
+    display: inline-block;
+    height: 50px;
+    margin-top: -50px;
+    vertical-align: top;
+}
+```
+- https://www.tomotanuki.com/entry/web-in-page-link-fixed
+
+##### 4.他参考リンク
 - https://mdstage.com/html-css/html-intermediate/anchor#section6
 - https://kumiko-jp.com/archives/215120.html
