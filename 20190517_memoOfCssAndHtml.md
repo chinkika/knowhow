@@ -278,3 +278,33 @@ vertical-align: middle;
 <a href="#"><img src="sample.jpg"></a>
 ```
 - https://giniland.com/html画像の右下に下線を消す方法/
+
+
+##### 19.ios上CSSが効かない(20191222)
+```
+nav.open ul li a {
+    margin-left: 13px;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    line-height: 1.8;
+}
+解決方法：下記を追加
+-webkit-appearance: none;
+```
+
+
+##### 20.safari上設定された▶アイコンが表示されず、標準アイコンに変わった(20191223)
+```
+nav.open ul li a:before {
+    content: "\25B6";
+    color: #1da1f2;
+}
+解決方法：\FE0Eを追加
+nav.open ul li a:before {
+    content: "\25B6 \FE0E";
+    color: #1da1f2;
+}
+```
+- https://stackoverflow.com/questions/40630952/how-i-can-prevent-safari-on-ios-to-replace-triangle-with-ios-ui
