@@ -310,7 +310,6 @@ nav.open ul li a:before {
 - https://stackoverflow.com/questions/40630952/how-i-can-prevent-safari-on-ios-to-replace-triangle-with-ios-ui
 
 
-
 ##### 21.flexbox指定位置で改行したい(20191223)
 - まずflexboxの設定として上下両端に合わせと左右両端に合わせにより四隅に配置されるように準備します。
 ```
@@ -339,3 +338,30 @@ nav.open ul li a:before {
 - https://qiita.com/junara/items/dd9f34a4f2baccf58b89
 
 
+##### 22.閉じるボタンを一番上にかぶせる(20191223)
+- まずflexboxの設定として上下両端に合わせと左右両端に合わせにより四隅に配置されるように準備します。
+```
+#storeDetailArea {
+    border-top: 0px solid #DBDBDB;
+    border-bottom: 0px solid #DBDBDB;
+}
+#storeDetailClose {
+    width: 44px;
+    height: 44px;
+    float: right;
+}
+解決方法：外枠にposition: relative追加、中の閉じるボタンにposition: absoluteを設定
+#storeDetailArea {
+    border-top: 0px solid #DBDBDB;
+    border-bottom: 0px solid #DBDBDB;
+    position: relative;
+}
+#storeDetailClose {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    right: 0px;
+    top: 0px;
+}
+```
+- https://saruwakakun.com/html-css/basic/relative-absolute-fixed
