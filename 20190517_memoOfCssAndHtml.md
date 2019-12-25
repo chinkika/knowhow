@@ -308,3 +308,34 @@ nav.open ul li a:before {
 }
 ```
 - https://stackoverflow.com/questions/40630952/how-i-can-prevent-safari-on-ios-to-replace-triangle-with-ios-ui
+
+
+
+##### 21.flexbox指定位置で改行したい(20191223)
+- まずflexboxの設定として上下両端に合わせと左右両端に合わせにより四隅に配置されるように準備します。
+```
+.container {
+  align-content: space-between;
+  justify-content: space-between;
+}
+```
+- 次に幅100%のダミー要素を用意することで、いつでも溢れて改行されるように準備します。
+```
+.container::after {
+  content: '';
+  width: 100%;
+}
+```
+- 最後に折り返したい個所のorderを変更します。今回では3番目と4番目を1にします。
+```
+.box:nth-child(n+3) {
+  order: 1;
+}
+```
+- 以上により、order: 0としては.box_1、.box_2、.container::after、次にorder: 1として.box_3、.box_4の順になります。
+そのため、１段目に.box_1と.box_2、２段目に.container::after、３段目に.box_3と.box_4が配置されるため、各ボックスが四隅に配置されることになります。
+- https://ja.stackoverflow.com/questions/34331/flexboxで-1行に並ぶボックスの数を指定したい
+- https://blog.8bit.co.jp/?p=16162
+- https://qiita.com/junara/items/dd9f34a4f2baccf58b89
+
+
