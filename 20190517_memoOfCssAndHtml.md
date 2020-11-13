@@ -365,3 +365,15 @@ nav.open ul li a:before {
 }
 ```
 - https://saruwakakun.com/html-css/basic/relative-absolute-fixed
+
+
+##### 23.iPadOSでフォントサイズが変わる(20201113)
+- safariでfont-size指定したが、デベロッパーツールで計算済みのスタイルを見ていたら、
+勝手に変わる場合がある
+- 対策：bodyにtext-size-adjust: none;を設定すると解決
+```
+text-size-adjust: none;
+-webkit-text-size-adjust: none;
+```
+- https://qiita.com/murs313/items/20eeb63bb3e2c98fc737
+- https://developer.mozilla.org/ja/docs/Web/CSS/text-size-adjust
