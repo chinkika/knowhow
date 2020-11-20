@@ -377,3 +377,16 @@ text-size-adjust: none;
 ```
 - https://qiita.com/murs313/items/20eeb63bb3e2c98fc737
 - https://developer.mozilla.org/ja/docs/Web/CSS/text-size-adjust
+
+
+##### 24.ボタン等無効に設定したい(20201120)
+```
+有効
+$("#rbIptButton").prop("disabled",false);
+有効
+$("#rbIptButton").prop("disabled",true);
+取得&判定
+if($("#rbIptButton").prop("disabled")==true)
+```
+- https://www.sejuku.net/blog/44465
+- https://qiita.com/ponsuke0531/items/ed8dc7991311a9a2a5a7
