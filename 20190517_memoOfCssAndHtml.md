@@ -390,3 +390,10 @@ if($("#rbIptButton").prop("disabled")==true)
 ```
 - https://www.sejuku.net/blog/44465
 - https://qiita.com/ponsuke0531/items/ed8dc7991311a9a2a5a7
+
+
+##### 25.chrome保存されたパスワードの自動入力を無効に(20201124)
+```
+autocomplete="new-password" による自動入力を抑止
+```
+- https://developer.mozilla.org/ja/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion
