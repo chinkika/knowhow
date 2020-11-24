@@ -397,3 +397,11 @@ if($("#rbIptButton").prop("disabled")==true)
 autocomplete="new-password" による自動入力を抑止
 ```
 - https://developer.mozilla.org/ja/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion
+
+
+##### 26.正規表現(20201124)
+```
+fileName.match(/[\\\/:\*\?"<>\|%&]/) 
+password.match(/^[a-zA-Z0-9!"-/:-@¥[-`{-~]+$/)
+```
+- https://qiita.com/grrrr/items/0b35b5c1c98eebfa5128
