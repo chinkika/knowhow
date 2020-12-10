@@ -405,3 +405,16 @@ fileName.match(/[\\\/:\*\?"<>\|%&]/)
 password.match(/^[a-zA-Z0-9!"-/:-@¥[-`{-~]+$/)
 ```
 - https://qiita.com/grrrr/items/0b35b5c1c98eebfa5128
+
+
+##### 27.正規表現(20201210)
+```
+ラジオボタンが無効に設定された時(disabled=true)、iOS端末でラジオボタンの上部が少し切れているように見える
+回避策：
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+```
+- http://www.htmq.com/css3/transform_scale.shtml
