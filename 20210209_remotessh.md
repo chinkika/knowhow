@@ -49,3 +49,14 @@ ProxyCommand   C:\Windows\System32\OpenSSH\ssh.exe -l %r -o StrictHostKeyCheckin
 - 参考
 - https://qiita.com/lasta/items/41e95a2fdded18c34dae
 - https://www.suzu6.net/posts/205-ssh-config-proxycommand-windows10/
+
+
+
+#### 下記エラー出た時解決方法 ####
+```
+Bad owner or permissions on
+kex_exchange_identification: Connection closed by remote host
+```
+- 解決方法：C:\Users\ユーザー名の下の.sshフォルダを消す
+- 参考
+- https://qiita.com/kure/items/3a5dc31c8bf0b0eb2f1b
